@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{0E84D249-25CD-4A68-81CB-FFEB6EFCE303}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{72F31FB9-36EB-4AC1-BB68-9F8F125B8912}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Catalog\mongo-commands.txt = Services\Catalog\mongo-commands.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{2EFD3735-5CBD-4A56-A949-0E8546092DC1}"
 EndProject
