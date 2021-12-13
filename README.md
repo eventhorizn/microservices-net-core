@@ -28,9 +28,27 @@ What are microservices?
 
 # Catalog API - MongoDB
 
+## Big Picture
+
 ![](images/big-picture.png)
 
-## Docker Setup
+## Catalog Design and Architecture
+
+![](images/catalog/overview.png)
+
+### Endpoints
+
+![](images/catalog/endpoints.png)
+
+### Layered Architecture
+
+![](images/catalog/layered-arch.png)
+
+### Repository Pattern
+
+![](images/catalog/repo-pattern.png)
+
+## MongoDB Setup
 
 We are going to set up mongo in our docker environment
 
@@ -48,6 +66,8 @@ We are going to set up mongo in our docker environment
    ```ps1
    docker exec -it shopping-mongo /bin/bash
    ```
+1. Hooking mongo up to .net
+   - [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver/) Nuget package
 
 ## Mongo CLI Commands
 
