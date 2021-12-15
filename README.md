@@ -68,6 +68,12 @@ We are going to set up mongo in our docker environment
    ```
 1. Hooking mongo up to .net
    - [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver/) Nuget package
+1. [MongoClient](https://hub.docker.com/r/mongoclient/mongoclient)
+   ```ps1
+   docker run -d -p 3000:3000 mongoclient/mongoclient
+   ```
+   - Gives us a GUI for our mongo db
+   - Best part, it's ran from docker just like the db
 
 ## Mongo CLI Commands
 
