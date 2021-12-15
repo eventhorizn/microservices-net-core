@@ -101,3 +101,9 @@ docker exec -it shopping-mongo /bin/bash
    db.Products.insertMany([{}, {}])
    ```
 1. There are more, check the `mongo-commands.txt` in the `Services\Catalog` folder
+
+# Basket.API - Redis
+
+## Big Picture
+
+![](images/big-picture.png)
