@@ -107,3 +107,53 @@ docker exec -it shopping-mongo /bin/bash
 ## Big Picture
 
 ![](images/big-picture.png)
+
+## Basket Design and Architecture
+
+![](images/basket/overview.png)
+
+### Endpoints
+
+![](images/basket/endpoints.png)
+
+### Layered Architecture
+
+![](images/basket/layered-arch.png)
+
+## Redis
+
+We will be using redis in the basket api
+
+1. Open-source NoSQL database
+1. Remote Dictionary server
+1. Key-value pairs
+1. Data Structure Server
+1. Extremely fast
+1. Save data both on RAM and on disk
+
+## Redis Setup
+
+1. [Docker Image](https://hub.docker.com/_/redis)
+   ```ps1
+   docker pull redis
+   ```
+1. Docker run command
+   ```ps1
+   docker run -d -p 6379:6379 --name aspnetrun-redis redis
+   ```
+1. Get inside redis image
+   ```ps1
+   docker exec -it aspnetrun-redis /bin/bash
+   ```
+
+## Redis CLI
+
+```bash
+redis-cli
+ping
+
+set key value
+get key
+set name mehmet
+get name
+```

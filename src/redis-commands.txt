@@ -1,0 +1,7 @@
+redis-cli
+ping
+
+set key value
+get key
+set name mehmet
+get name
