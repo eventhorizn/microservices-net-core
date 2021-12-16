@@ -28,6 +28,9 @@ What are microservices?
 
 # Catalog API - MongoDB
 
+- localhost:8000
+  - When running from docker
+
 ## Big Picture
 
 ![](images/big-picture.png)
@@ -104,6 +107,9 @@ docker exec -it shopping-mongo /bin/bash
 
 # Basket.API - Redis
 
+- localhost:8001
+  - When running from docker
+
 ## Big Picture
 
 ![](images/big-picture.png)
@@ -159,3 +165,13 @@ get key
 set name mehmet
 get name
 ```
+
+# Portainer
+
+- [Documentation](https://docs.portainer.io/v/ce-2.11/start/intro)
+- [Docker Image](https://hub.docker.com/r/portainer/portainer-ce)
+
+1. Manage container-based software applications
+1. k8s, docker, docker swarm, azure aci, and edge
+1. Manage environments, deploy apps, monitor app performance, triage problems
+1. localhost:9000
