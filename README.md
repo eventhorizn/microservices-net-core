@@ -175,3 +175,10 @@ get name
 1. k8s, docker, docker swarm, azure aci, and edge
 1. Manage environments, deploy apps, monitor app performance, triage problems
 1. localhost:9000
+   - When running from docker
+
+# Discount API - Postgres
+
+## Big Picture
+
+![](images/big-picture.png)
