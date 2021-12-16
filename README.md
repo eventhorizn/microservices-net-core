@@ -196,3 +196,15 @@ get name
 1. Creating a DiscountServer (server) and DiscountDb (database)
 1. [Nuget Package](https://www.nuget.org/packages/Npgsql/)
    - Npgsql
+
+# Discount gRPC for Microservices Grpc Communication
+
+## Big Picture
+
+![](images/big-picture.png)
+
+## gRPC
+
+![](images/grpc-overview.png)
+
+![](images/grpc-example.png)
