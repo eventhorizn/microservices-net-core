@@ -37,7 +37,7 @@ public class CatalogController : ControllerBase
         var product = await _repository.GetProductById(id);
         if (product == null)
         {
-            _log.LogError($"Product with id: {id}, not found.");
+            _log.LogError($"Product with id: {id} not found.");
             return NotFound();
         }
         return Ok(product);

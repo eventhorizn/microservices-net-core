@@ -145,6 +145,8 @@ We will be using redis in the basket api
    ```ps1
    docker exec -it aspnetrun-redis /bin/bash
    ```
+1. Hook .net up to redis
+   - [Nuget Package](https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis/)
 
 ## Redis CLI
 
