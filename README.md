@@ -182,3 +182,17 @@ get name
 ## Big Picture
 
 ![](images/big-picture.png)
+
+## PostgreSQL
+
+1. [Docker Image](https://hub.docker.com/_/postgres)
+   ```ps1
+   docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+   ```
+1. But we will use docker-compose from the beginning
+1. Using pgAdmin (from of course docker)
+   - [Link](https://hub.docker.com/r/dpage/pgadmin4)
+   - localhost:5050 when running from docker
+1. Creating a DiscountServer (server) and DiscountDb (database)
+1. [Nuget Package](https://www.nuget.org/packages/Npgsql/)
+   - Npgsql

@@ -27,6 +27,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{720F0608-AA1D-465F-A4B0-FB4CCFBB338A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{671A839D-137E-4E41-A3A5-A43C6B9FD14C}"
+	ProjectSection(SolutionItems) = preProject
+		Coupon-Postgres-Commands.txt = Coupon-Postgres-Commands.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discount.API", "Services\Discount\Discount.API\Discount.API.csproj", "{124D8D62-B527-4866-9A82-7C60A0E98D65}"
 EndProject
