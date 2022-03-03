@@ -26,6 +26,13 @@ What are microservices?
 
 ![](images/deploy-compare.png)
 
+# Docker and Docker Compose
+
+1. Rebuild
+	```cmd
+	docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
+	```
+
 # Catalog API - MongoDB
 
 - localhost:8000
@@ -164,6 +171,30 @@ set key value
 get key
 set name mehmet
 get name
+```
+
+## Test Data
+
+```json
+{
+  "userName": "ghake",
+  "items": [
+    {
+      "quantity": 2,
+      "color": "Red",
+      "price": 500,
+      "productId": "123456789",
+      "productName": "IPhone X"
+    },
+    {
+      "quantity": 1,
+      "color": "Blue",
+      "price": 500,
+      "productId": "123456788",
+      "productName": "Samsung 10"
+    }
+  ]
+}
 ```
 
 # Portainer
