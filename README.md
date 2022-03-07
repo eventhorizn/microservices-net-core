@@ -12,6 +12,10 @@ What are microservices?
 
 ![](images/mservice-characteristic.png)
 
+## Big Picture
+
+![](images/big-picture.png)
+
 # Monolithic vs Microservice
 
 ## Monolithic Pro-Con
@@ -37,10 +41,6 @@ What are microservices?
 
 - localhost:8000
   - When running from docker
-
-## Big Picture
-
-![](images/big-picture.png)
 
 ## Catalog Design and Architecture
 
@@ -116,10 +116,6 @@ docker exec -it shopping-mongo /bin/bash
 
 - localhost:8001
   - When running from docker
-
-## Big Picture
-
-![](images/big-picture.png)
 
 ## Basket Design and Architecture
 
@@ -210,10 +206,6 @@ get name
 
 # Discount API - Postgres
 
-## Big Picture
-
-![](images/big-picture.png)
-
 ## PostgreSQL
 
 1. [Docker Image](https://hub.docker.com/_/postgres)
@@ -230,10 +222,6 @@ get name
 
 # Discount gRPC for Microservices Grpc Communication
 
-## Big Picture
-
-![](images/big-picture.png)
-
 ## gRPC
 
 ![](images/grpc-overview.png)
@@ -241,3 +229,21 @@ get name
 ![](images/grpc-example.png)
 
 - [gRPC vs Rest](https://cloud.google.com/blog/products/api-management/understanding-grpc-openapi-and-rest-and-when-to-use-them)
+
+# Ordering Microservice with Clean Arch and CQRS
+
+## Overview
+
+![](images/order/overview.png)
+
+## Architecture
+
+![](images/order/arch.png)
+
+## CQRS and Domain Driven Design Overview
+
+![](images/order/cqrs-ddd.png)
+
+## Domain Driven Design
+
+![](images/order/ddd.png)
