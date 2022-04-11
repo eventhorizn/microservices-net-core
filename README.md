@@ -247,3 +247,12 @@ get name
 ## Domain Driven Design
 
 ![](images/order/ddd.png)
+
+## Mediator Design Pattern
+
+![](images/order/mediator-design-pattern.png)
+
+- Install MediatR package
+    ```cmd
+    Install-Package MediatR.Extensions.Microsoft.DependencyInjection
+    ```
