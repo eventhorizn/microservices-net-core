@@ -16,9 +16,8 @@ public class CatalogController : ControllerBase
     public CatalogController(IProductRepository repository, 
         ILogger<CatalogController> log)
     {
-        _repository = repository ?? 
-            throw new ArgumentNullException(nameof(repository));
-        _log = log ?? throw new ArgumentNullException(nameof(log));
+        _repository = repository;
+        _log = log;
     }
 
     [HttpGet]

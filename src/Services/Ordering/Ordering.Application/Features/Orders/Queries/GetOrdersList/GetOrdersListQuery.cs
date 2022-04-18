@@ -8,6 +8,6 @@ public class GetOrdersListQuery : IRequest<List<OrdersVm>>
 
     public GetOrdersListQuery(string userName)
     {
-        UserName = userName ?? throw new ArgumentNullException(nameof(userName));
+        UserName = userName;
     }
 }
