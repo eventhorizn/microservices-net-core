@@ -232,6 +232,8 @@ get name
 
 # Ordering Microservice with Clean Arch and CQRS
 
+1. Using [SendGrid](https://docs.sendgrid.com/for-developers/sending-email/email-api-quickstart-for-c) to send emails
+
 ## Overview
 
 ![](images/order/overview.png)
