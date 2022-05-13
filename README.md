@@ -1,5 +1,7 @@
 # Microservices
 
+TODO: Massive re-org and cleanup of this readme
+
 ![](images/mservice-overview.png)
 
 What are microservices?
@@ -268,3 +270,15 @@ get name
     - Creates our initial migration
 1. SQL Server Docker
     - [Link](https://hub.docker.com/_/microsoft-mssql-server)
+1. Everything else is defined in the code (docker and appsettings)
+
+# Local App Links
+
+TODO Put links of local apps when running from docker
+
+1. [Portainer](http://localhost:9000/#!/home)
+    - admin
+    - admin1234
+1. [Catalog API](http://localhost:8000/swagger/index.html)
+1. [Basket API](http://localhost:8001/swagger/index.html)
+1. [Ordering API](http://localhost:8004/swagger/index.html)
