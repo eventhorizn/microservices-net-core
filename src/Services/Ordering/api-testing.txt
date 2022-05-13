@@ -1,0 +1,27 @@
+POST
+
+{
+  "userName": "grh",
+  "totalPrice": 100,
+  "firstName": "Gary",
+  "lastName": "Hake",
+  "emailAddress": "devgaryhake@test.com",
+  "addressLine": "Maricopa",
+  "country": "US",
+  "state": "KY",
+  "zipCode": "40223",
+  "cardName": "string",
+  "cardNumber": "string",
+  "expiration": "string",
+  "cvv": "string",
+  "paymentMethod": 0
+}
+
+PUT
+
+{
+  "id": 2,
+  "userName": "grh2",
+  "emailAddress": "ghake@test.com",
+  "totalPrice": 200
+}
