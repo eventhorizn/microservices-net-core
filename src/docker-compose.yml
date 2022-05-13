@@ -10,6 +10,9 @@ services:
   discountdb:
     image: postgres
 
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
   pgadmin:
     image: dpage/pgadmin4
 
@@ -45,4 +48,3 @@ volumes:
   portainer_data:
   postgres_data:
   pgadmin_data:
-

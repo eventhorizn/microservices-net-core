@@ -259,10 +259,12 @@ get name
     Install-Package MediatR.Extensions.Microsoft.DependencyInjection
     ```
 
-## Ordering API EF Setup
+## Ordering API EF and SQLServer Setup
 
 1. Create the database migration in the Ordering.Infrastructure project
     ```cmd
     Add-Migration InitialCreate
     ```
     - Creates our initial migration
+1. SQL Server Docker
+    - [Link](https://hub.docker.com/_/microsoft-mssql-server)
