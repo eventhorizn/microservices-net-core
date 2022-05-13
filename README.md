@@ -258,3 +258,11 @@ get name
     ```cmd
     Install-Package MediatR.Extensions.Microsoft.DependencyInjection
     ```
+
+## Ordering API EF Setup
+
+1. Create the database migration in the Ordering.Infrastructure project
+    ```cmd
+    Add-Migration InitialCreate
+    ```
+    - Creates our initial migration

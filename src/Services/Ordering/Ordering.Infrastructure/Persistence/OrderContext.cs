@@ -9,9 +9,7 @@ public class OrderContext : DbContext
     public DbSet<Order> Orders { get; set; }
 
     public OrderContext(DbContextOptions<OrderContext> options) : base(options)
-    {
-
-    }
+    { }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
