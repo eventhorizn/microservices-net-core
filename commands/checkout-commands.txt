@@ -1,0 +1,40 @@
+Post Basket
+
+{
+	"UserName": "grh",
+	"Items": [
+		{
+			"Quantity": 2,
+			"Color": "Red",
+			"Price": 500,
+			"ProductId": "60210c2a1556459e153f0554",
+			"ProductName": "IPhone X"
+		},
+		{
+			"Quantity": 1,
+			"Color": "Blue",
+			"Price": 500,
+			"ProductId": "60210c2a1556459e153f0555",
+			"ProductName": "Samsung 10"
+		}
+	]
+}
+
+Post Basket Checkout
+
+{
+  "userName": "grh",
+  "totalPrice": 0,
+  "firstName": "grh",
+  "lastName": "grh",
+  "emailAddress": "string",
+  "addressLine": "string",
+  "country": "string",
+  "state": "string",
+  "zipCode": "string",
+  "cardName": "string",
+  "cardNumber": "string",
+  "expiration": "string",
+  "cvv": "string",
+  "paymentMethod": 1
+}
