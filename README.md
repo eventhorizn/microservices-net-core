@@ -272,6 +272,29 @@ get name
     - [Link](https://hub.docker.com/_/microsoft-mssql-server)
 1. Everything else is defined in the code (docker and appsettings)
 
+# Async Communication with RabbitMQ & MassTransit for Checkout
+
+1. Message Queue System
+1. Event-Driven Architecture
+1. [Docker Image](https://hub.docker.com/_/rabbitmq)
+
+![](images/checkout/rabbit-mq.png)
+
+## RabbitMQ Pub/Sub Architecture
+
+![](images/checkout/rabbit-arch.png)
+
+![](images/checkout/rabbit-pub-sub.png)
+
+- We'll be using Event Driven Architecture in our design
+
+## RabbitMQ Exchange Types
+
+1. Direct Exchanges
+1. Topic Exchanges
+1. Fanout Exchanges
+1. Header Exchanges
+
 # Local App Links
 
 TODO Put links of local apps when running from docker
@@ -282,3 +305,6 @@ TODO Put links of local apps when running from docker
 1. [Catalog API](http://localhost:8000/swagger/index.html)
 1. [Basket API](http://localhost:8001/swagger/index.html)
 1. [Ordering API](http://localhost:8004/swagger/index.html)
+1. [RabbitMQ](http://localhost:15672/)
+    - guest
+    - guest
