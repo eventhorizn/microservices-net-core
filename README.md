@@ -35,9 +35,9 @@ What are microservices?
 # Docker and Docker Compose
 
 1. Rebuild
-	```cmd
-	docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
-	```
+   ```cmd
+   docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
+   ```
 
 # Catalog API - MongoDB
 
@@ -175,23 +175,23 @@ get name
 
 ```json
 {
-  "userName": "ghake",
-  "items": [
-    {
-      "quantity": 2,
-      "color": "Red",
-      "price": 500,
-      "productId": "123456789",
-      "productName": "IPhone X"
-    },
-    {
-      "quantity": 1,
-      "color": "Blue",
-      "price": 500,
-      "productId": "123456788",
-      "productName": "Samsung 10"
-    }
-  ]
+	"userName": "ghake",
+	"items": [
+		{
+			"quantity": 2,
+			"color": "Red",
+			"price": 500,
+			"productId": "123456789",
+			"productName": "IPhone X"
+		},
+		{
+			"quantity": 1,
+			"color": "Blue",
+			"price": 500,
+			"productId": "123456788",
+			"productName": "Samsung 10"
+		}
+	]
 }
 ```
 
@@ -257,19 +257,19 @@ get name
 ![](images/order/mediator-design-pattern.png)
 
 - Install MediatR package
-    ```cmd
-    Install-Package MediatR.Extensions.Microsoft.DependencyInjection
-    ```
+  ```cmd
+  Install-Package MediatR.Extensions.Microsoft.DependencyInjection
+  ```
 
 ## Ordering API EF and SQLServer Setup
 
 1. Create the database migration in the Ordering.Infrastructure project
-    ```cmd
-    Add-Migration InitialCreate
-    ```
-    - Creates our initial migration
+   ```cmd
+   Add-Migration InitialCreate
+   ```
+   - Creates our initial migration
 1. SQL Server Docker
-    - [Link](https://hub.docker.com/_/microsoft-mssql-server)
+   - [Link](https://hub.docker.com/_/microsoft-mssql-server)
 1. Everything else is defined in the code (docker and appsettings)
 
 # Async Communication with RabbitMQ & MassTransit for Checkout
@@ -295,16 +295,18 @@ get name
 1. Fanout Exchanges
 1. Header Exchanges
 
+# API Gateways with Ocelot and Gateways Routing Pattern
+
 # Local App Links
 
 TODO Put links of local apps when running from docker
 
 1. [Portainer](http://localhost:9000/#!/home)
-    - admin
-    - admin1234
+   - admin
+   - admin1234
 1. [Catalog API](http://localhost:8000/swagger/index.html)
 1. [Basket API](http://localhost:8001/swagger/index.html)
 1. [Ordering API](http://localhost:8004/swagger/index.html)
 1. [RabbitMQ](http://localhost:15672/)
-    - guest
-    - guest
+   - guest
+   - guest
