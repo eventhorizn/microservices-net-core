@@ -20,6 +20,8 @@ builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>
     (o => o.Address = new Uri(builder.Configuration.GetValue<string>("GrpcSettings:DiscountUrl")));
 builder.Services.AddScoped<DiscountGrpcService>();
 
+var blah = builder.Configuration["EventBusSettings:HostAddress"];
+
 // MassTransit-RabbitMQ Configuration
 builder.Services.AddMassTransit(config =>
 {

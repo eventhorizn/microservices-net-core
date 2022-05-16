@@ -22,9 +22,6 @@ EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FDAC8B81-B12F-4861-B2D1-FFAD95FB2AA5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{5314DABB-ED92-4EBE-9CCD-DC800863E04C}"
-	ProjectSection(SolutionItems) = preProject
-		redis-commands.txt = redis-commands.txt
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basket.API", "Services\Basket\Basket.API\Basket.API.csproj", "{720F0608-AA1D-465F-A4B0-FB4CCFBB338A}"
 EndProject
@@ -49,7 +46,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{89DBD485-7FFC-4F3E-A068-D5FCF1AD078F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{21C2A0B4-0D13-4ACD-8F49-D273D165C1CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{21C2A0B4-0D13-4ACD-8F49-D273D165C1CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{5E16E852-B45A-439E-B7A8-D566F02A2218}"
+	ProjectSection(SolutionItems) = preProject
+		..\commands\basket-commands.txt = ..\commands\basket-commands.txt
+		..\commands\coupon-postgres-commands.txt = ..\commands\coupon-postgres-commands.txt
+		..\commands\ordering-commands.txt = ..\commands\ordering-commands.txt
+		..\commands\postman_collection.json = ..\commands\postman_collection.json
+		..\commands\redis-commands.txt = ..\commands\redis-commands.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +121,7 @@ Global
 		{0C79DAE5-EF02-4AA0-9BBC-F16F481CCAA5} = {6BA92CF9-8873-47E7-BA23-0419451D9FD3}
 		{84EBCF05-165D-48AF-A113-45A3C09AF794} = {6BA92CF9-8873-47E7-BA23-0419451D9FD3}
 		{21C2A0B4-0D13-4ACD-8F49-D273D165C1CB} = {89DBD485-7FFC-4F3E-A068-D5FCF1AD078F}
+		{5E16E852-B45A-439E-B7A8-D566F02A2218} = {25E26E29-94D2-481E-AB19-E21727D2C6A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4B12A95-AA22-4E44-92CC-C6534C75D02C}
