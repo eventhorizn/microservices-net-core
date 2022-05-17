@@ -297,6 +297,25 @@ get name
 
 # API Gateways with Ocelot and Gateways Routing Pattern
 
+![](images/gateway-routing/gate-route-pattern.png)
+
+![](images/gateway-routing/api-gate-route-pattern.png)
+
+## Ocelot API Gateway
+
+[Official Docs](https://ocelot.readthedocs.io/en/latest/features/routing.html)
+
+1. Lightweight API Gateway
+1. .net Core based API Gateway
+1. Open Source
+1. Fast and Scalable
+1. Can deploy with the rest of our code
+1. Ocelot will get tokens and attach to requests for other
+
+## Ocelot Authentication
+
+![](images/gateway-routing/ocelot-auth.png)
+
 # Local App Links
 
 TODO Put links of local apps when running from docker

@@ -57,6 +57,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{5E
 		..\commands\redis-commands.txt = ..\commands\redis-commands.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{6D07A6B2-970D-4600-830E-07AD103D9757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{4FC5648D-8C98-4166-AC94-2D4818564385}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +107,10 @@ Global
 		{21C2A0B4-0D13-4ACD-8F49-D273D165C1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21C2A0B4-0D13-4ACD-8F49-D273D165C1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21C2A0B4-0D13-4ACD-8F49-D273D165C1CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC5648D-8C98-4166-AC94-2D4818564385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC5648D-8C98-4166-AC94-2D4818564385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC5648D-8C98-4166-AC94-2D4818564385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC5648D-8C98-4166-AC94-2D4818564385}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +130,7 @@ Global
 		{84EBCF05-165D-48AF-A113-45A3C09AF794} = {6BA92CF9-8873-47E7-BA23-0419451D9FD3}
 		{21C2A0B4-0D13-4ACD-8F49-D273D165C1CB} = {89DBD485-7FFC-4F3E-A068-D5FCF1AD078F}
 		{5E16E852-B45A-439E-B7A8-D566F02A2218} = {25E26E29-94D2-481E-AB19-E21727D2C6A8}
+		{4FC5648D-8C98-4166-AC94-2D4818564385} = {6D07A6B2-970D-4600-830E-07AD103D9757}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4B12A95-AA22-4E44-92CC-C6534C75D02C}
