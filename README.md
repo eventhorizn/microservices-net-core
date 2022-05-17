@@ -316,9 +316,17 @@ get name
 
 ![](images/gateway-routing/ocelot-auth.png)
 
-# Local App Links
+## Rate Limiting
 
-TODO Put links of local apps when running from docker
+[Official Docs](https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html?highlight=rate%20limitnig)
+
+1. You'll limit a specific api
+
+## Response Caching
+
+[Official Docs](https://ocelot.readthedocs.io/en/latest/features/caching.html?highlight=caching)
+
+# Local App Links
 
 1. [Portainer](http://localhost:9000/#!/home)
    - admin
@@ -329,3 +337,10 @@ TODO Put links of local apps when running from docker
 1. [RabbitMQ](http://localhost:15672/)
    - guest
    - guest
+
+# TODO
+
+1. Securing Microservicers with IdentityServer4 and Ocelot
+   - [GitHub Link](https://github.com/aspnetrun/run-aspnet-identityserver4)
+   - [Medium Link](https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oauth2-and-openid-connect-fronted-by-ocelot-api-49ea44a0cf9e)
+   - [Example 2](https://github.com/mansoorafzal/SecureMicroservices)
