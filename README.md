@@ -338,8 +338,17 @@ get name
    - guest
    - guest
 
+# Shopping.Aggregator - API Gateway - Requests Aggregation Pattern
+
+![](images/gateway-aggregate/gate-agg-pattern.png)
+
+![](images/gateway-aggregate/gate-agg-pattern-det.png)
+
+![](images/gateway-aggregate/gate-agg-pattern-arch.png)
+
 # TODO
 
+1. Convert simple apis to minimal apis
 1. Securing Microservicers with IdentityServer4 and Ocelot
    - [GitHub Link](https://github.com/aspnetrun/run-aspnet-identityserver4)
    - [Medium Link](https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oauth2-and-openid-connect-fronted-by-ocelot-api-49ea44a0cf9e)
