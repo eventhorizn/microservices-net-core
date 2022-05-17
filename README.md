@@ -337,6 +337,9 @@ get name
 1. [RabbitMQ](http://localhost:15672/)
    - guest
    - guest
+1. [Ocelot](http://localhost:8010)
+   - Supposed to return text, but doesn't
+   - Service still works
 
 # Shopping.Aggregator - API Gateway - Requests Aggregation Pattern
 
@@ -346,6 +349,12 @@ get name
 
 ![](images/gateway-aggregate/gate-agg-pattern-arch.png)
 
+## Http Requests and IHttpClientFactory
+
+[Official Documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-6.0)
+
+# Shopping Web App
+
 # TODO
 
 1. Convert simple apis to minimal apis
@@ -353,3 +362,6 @@ get name
    - [GitHub Link](https://github.com/aspnetrun/run-aspnet-identityserver4)
    - [Medium Link](https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oauth2-and-openid-connect-fronted-by-ocelot-api-49ea44a0cf9e)
    - [Example 2](https://github.com/mansoorafzal/SecureMicroservices)
+   - JWT Token security
+1. Develop Blazor Front End for Microservices
+   - [GitHub Example](https://github.com/thanhxuanhd/AspnetMicroservices/tree/main/aspnetrun-microservices/WebApps/AspnetRunBasicBlazor)
