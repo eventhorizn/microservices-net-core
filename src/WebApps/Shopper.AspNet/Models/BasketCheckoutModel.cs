@@ -2,7 +2,7 @@
 
 public class BasketCheckoutModel
 {
-    public string UserName { get; set; }
+    public string? UserName { get; set; }
     public decimal TotalPrice { get; set; }
 
     // BillingAddress

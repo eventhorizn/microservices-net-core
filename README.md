@@ -365,3 +365,8 @@ get name
    - JWT Token security
 1. Develop Blazor Front End for Microservices
    - [GitHub Example](https://github.com/thanhxuanhd/AspnetMicroservices/tree/main/aspnetrun-microservices/WebApps/AspnetRunBasicBlazor)
+1. Asp.net front end app
+   - Css fixes
+   - Desing fixes
+   - Bootstrap 5
+   - Bugs (menu highlighting)
