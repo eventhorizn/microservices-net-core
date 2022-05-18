@@ -1,31 +1,39 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Shopper.AspNet.Entities;
-using Shopper.AspNet.Repositories.Interfaces;
+using Shopper.AspNet.Models;
+using Shopper.AspNet.Services;
 
 namespace Shopper.AspNet.Pages;
 
 public class CartModel : PageModel
 {
-    private readonly ICartRepository _cartRepository;
+    private readonly IBasketService _basketService;
 
-    public CartModel(ICartRepository cartRepository)
+    public CartModel(IBasketService basketService)
     {
-        _cartRepository = cartRepository ?? throw new ArgumentNullException(nameof(cartRepository));
+        _basketService = basketService;
     }
 
-    public Cart Cart { get; set; } = new Cart();
+    public BasketModel Cart { get; set; } = new BasketModel();
 
     public async Task<IActionResult> OnGetAsync()
     {
-        Cart = await _cartRepository.GetCartByUserName("test");
+        var userName = "grh";
+        Cart = await _basketService.GetBasket(userName);
 
         return Page();
     }
 
-    public async Task<IActionResult> OnPostRemoveToCartAsync(int cartId, int cartItemId)
+    public async Task<IActionResult> OnPostRemoveToCartAsync(string productId)
     {
-        await _cartRepository.RemoveItem(cartId, cartItemId);
+        var userName = "grh";
+        var basket = await _basketService.GetBasket(userName);
+
+        var item = basket.Items.Single(x => x.ProductId == productId);
+        basket.Items.Remove(item);
+
+        await _basketService.UpdateBasket(basket);
+
         return RedirectToPage();
     }
 }

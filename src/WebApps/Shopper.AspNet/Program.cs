@@ -1,24 +1,13 @@
-using Microsoft.EntityFrameworkCore;
-using Shopper.AspNet.Data;
-using Shopper.AspNet.Repositories;
-using Shopper.AspNet.Repositories.Interfaces;
+using Shopper.AspNet.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// use in-memory database
-//services.AddDbContext<AspnetRunContext>(c =>
-//    c.UseInMemoryDatabase("AspnetRunConnection"));
-
-// add database dependecy
-builder.Services.AddDbContext<Context>(c =>
-    c.UseSqlServer(builder.Configuration.GetConnectionString("ShopperAspNetConnection")));
-
-// add repository dependecy
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<ICartRepository, CartRepository>();
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddScoped<IContactRepository, ContactRepository>();
-
+builder.Services.AddHttpClient<ICatalogService, CatalogService>(c =>
+    c.BaseAddress = new Uri(builder.Configuration["ApiSettings:GatewayAddress"]));
+builder.Services.AddHttpClient<IBasketService, BasketService>(c =>
+    c.BaseAddress = new Uri(builder.Configuration["ApiSettings:GatewayAddress"]));
+builder.Services.AddHttpClient<IOrderService, OrderService>(c =>
+    c.BaseAddress = new Uri(builder.Configuration["ApiSettings:GatewayAddress"]));
 
 builder.Services.AddRazorPages();
 

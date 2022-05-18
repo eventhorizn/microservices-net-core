@@ -1,24 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Shopper.AspNet.Entities;
-using Shopper.AspNet.Repositories.Interfaces;
+using Shopper.AspNet.Models;
+using Shopper.AspNet.Services;
 
 namespace Shopper.AspNet.Pages;
 
 public class OrderModel : PageModel
 {
-    private readonly IOrderRepository _orderRepository;
-    public IEnumerable<Order> Orders { get; set; } = new List<Order>();
+    private readonly IOrderService _orderService;
 
-    public OrderModel(IOrderRepository orderRepository)
+    public IEnumerable<OrderResponseModel> Orders { get; set; } = new List<OrderResponseModel>();
+
+    public OrderModel(IOrderService orderService)
     {
-        _orderRepository = orderRepository ?? throw new ArgumentNullException(nameof(orderRepository));
+        _orderService = orderService ?? throw new ArgumentNullException(nameof(orderService));
     }
 
     public async Task<IActionResult> OnGetAsync()
     {
-        Orders = await _orderRepository.GetOrdersByUserName("test");
+        Orders = await _orderService.GetOrdersByUserName("grh");
 
         return Page();
-    }       
+    }
 }

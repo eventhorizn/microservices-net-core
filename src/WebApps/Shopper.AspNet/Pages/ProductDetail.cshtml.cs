@@ -1,22 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Shopper.AspNet.Entities;
-using Shopper.AspNet.Repositories.Interfaces;
+using Shopper.AspNet.Models;
+using Shopper.AspNet.Services;
 
 namespace Shopper.AspNet.Pages;
 
 public class ProductDetailModel : PageModel
 {
-    private readonly IProductRepository _productRepository;
-    private readonly ICartRepository _cartRepository;
+    private readonly ICatalogService _catalogService;
+    private readonly IBasketService _basketService;
 
-    public ProductDetailModel(IProductRepository productRepository, ICartRepository cartRepository)
+    public ProductDetailModel(ICatalogService catalogService, IBasketService basketService)
     {
-        _productRepository = productRepository;
-        _cartRepository = cartRepository;
+        _catalogService = catalogService ?? throw new ArgumentNullException(nameof(catalogService));
+        _basketService = basketService ?? throw new ArgumentNullException(nameof(basketService));
     }
 
-    public Product Product { get; set; }
+    public CatalogModel Product { get; set; }
 
     [BindProperty]
     public string Color { get; set; }
@@ -24,14 +24,14 @@ public class ProductDetailModel : PageModel
     [BindProperty]
     public int Quantity { get; set; }
 
-    public async Task<IActionResult> OnGetAsync(int? productId)
+    public async Task<IActionResult> OnGetAsync(string productId)
     {
         if (productId == null)
         {
             return NotFound();
         }
 
-        Product = await _productRepository.GetProductById(productId.Value);
+        Product = await _catalogService.GetCatalog(productId);
         if (Product == null)
         {
             return NotFound();
@@ -39,12 +39,24 @@ public class ProductDetailModel : PageModel
         return Page();
     }
 
-    public async Task<IActionResult> OnPostAddToCartAsync(int productId)
+    public async Task<IActionResult> OnPostAddToCartAsync(string productId)
     {
-        //if (!User.Identity.IsAuthenticated)
-        //    return RedirectToPage("./Account/Login", new { area = "Identity" });
+        var product = await _catalogService.GetCatalog(productId);
 
-        await _cartRepository.AddItem("test", productId, Quantity, Color);
+        var userName = "grh";
+        var basket = await _basketService.GetBasket(userName);
+
+        basket.Items.Add(new BasketItemModel
+        {
+            ProductId = productId,
+            ProductName = product.Name,
+            Price = product.Price,
+            Quantity = Quantity,
+            Color = Color
+        });
+
+        await _basketService.UpdateBasket(basket);
+
         return RedirectToPage("Cart");
     }
 }
