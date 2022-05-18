@@ -326,6 +326,18 @@ get name
 
 [Official Docs](https://ocelot.readthedocs.io/en/latest/features/caching.html?highlight=caching)
 
+# Shopping.Aggregator - API Gateway - Requests Aggregation Pattern
+
+![](images/gateway-aggregate/gate-agg-pattern.png)
+
+![](images/gateway-aggregate/gate-agg-pattern-det.png)
+
+![](images/gateway-aggregate/gate-agg-pattern-arch.png)
+
+## Http Requests and IHttpClientFactory
+
+[Official Documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-6.0)
+
 # Local App Links
 
 1. [Portainer](http://localhost:9000/#!/home)
@@ -340,24 +352,16 @@ get name
 1. [Ocelot](http://localhost:8010)
    - Supposed to return text, but doesn't
    - Service still works
-
-# Shopping.Aggregator - API Gateway - Requests Aggregation Pattern
-
-![](images/gateway-aggregate/gate-agg-pattern.png)
-
-![](images/gateway-aggregate/gate-agg-pattern-det.png)
-
-![](images/gateway-aggregate/gate-agg-pattern-arch.png)
-
-## Http Requests and IHttpClientFactory
-
-[Official Documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-6.0)
-
-# Shopping Web App
+1. [Asp.Net Shopper](http://host.docker.internal:8006/)
 
 # TODO
 
 1. Convert simple apis to minimal apis
+1. Asp.net front end app
+   - Css fixes
+   - Desing fixes
+   - Bootstrap 5
+   - Bugs (menu highlighting)
 1. Securing Microservicers with IdentityServer4 and Ocelot
    - [GitHub Link](https://github.com/aspnetrun/run-aspnet-identityserver4)
    - [Medium Link](https://medium.com/aspnetrun/securing-microservices-with-identityserver4-with-oauth2-and-openid-connect-fronted-by-ocelot-api-49ea44a0cf9e)
@@ -365,8 +369,8 @@ get name
    - JWT Token security
 1. Develop Blazor Front End for Microservices
    - [GitHub Example](https://github.com/thanhxuanhd/AspnetMicroservices/tree/main/aspnetrun-microservices/WebApps/AspnetRunBasicBlazor)
-1. Asp.net front end app
-   - Css fixes
-   - Desing fixes
-   - Bootstrap 5
-   - Bugs (menu highlighting)
+1. Implement Observability w/ Distributed Logging
+   - [GitHub Link](https://github.com/aspnetrun/run-aspnetcore-microservices/tree/master/src/WebApps/WebStatus)
+1. Deploy services to k8s, ADO, into AKS
+   - [GitHub Link k8s](https://github.com/felipecembranelli/run-aspnetcore-microservices)
+   - [GitHub Link ADO](https://github.com/aspnetrun/run-devops)
