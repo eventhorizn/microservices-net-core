@@ -59,13 +59,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{5E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{6D07A6B2-970D-4600-830E-07AD103D9757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{4FC5648D-8C98-4166-AC94-2D4818564385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{4FC5648D-8C98-4166-AC94-2D4818564385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Aggregator", "ApiGateways\Shopping.Aggregator\Shopping.Aggregator.csproj", "{A6CD3C01-F904-43CB-BFE5-22F38A8BC458}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Aggregator", "ApiGateways\Shopping.Aggregator\Shopping.Aggregator.csproj", "{A6CD3C01-F904-43CB-BFE5-22F38A8BC458}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{D54B059C-660C-42FF-A337-A8F8C4DA3752}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopper.AspNet", "WebApps\Shopper.AspNet\Shopper.AspNet.csproj", "{11F321E2-613E-4D65-A245-660C6F562F92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopper.AspNet", "WebApps\Shopper.AspNet\Shopper.AspNet.csproj", "{11F321E2-613E-4D65-A245-660C6F562F92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
